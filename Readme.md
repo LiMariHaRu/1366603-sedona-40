@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mari Li](https://up.htmlacademy.ru/htmlcss/40/user/1366603).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Шабалин](https://htmlacademy.ru/profile/id1057153).
 
 ---
 
