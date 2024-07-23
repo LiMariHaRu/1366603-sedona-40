@@ -3,48 +3,42 @@
 
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона. Городок в Аризоне</title>
   </head>
 
   <body>
     <header class="page-header">
       <nav class="navigation">
+        <a class="navigation-logo" href="#">
+          <img class="page-header-logo" src="" alt="Логотип города Седона">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <img class="navigation-logo" src="" alt="Логотип города Седона">
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-user-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Избранное
-              </span>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-user-link-favorite" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="notification-badge">12</span>
             </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
+      <a class="header-button" href="#">Хочу сюда!</a>
     </header>
-
     <main class="main-index">
       <h1 class="visually-hidden">
         Добро пожаловать в город Седона!
@@ -120,52 +114,43 @@
         </p>
         <a class="interest-link button">Поиск гостиницы В Седоне</a>
       </section>
-    </main>
-    <footer class="page-footer">
-      <section class="footer-newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form class="newsletter-form">
-          <input class="newsletter-email" placeholder="Ваш e-mail" type="email">
-          <button class="newsletter-button" type="submit">
-            <span class="newsletter-button-name">
-              Подписаться
-            </span>
-          </button>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscribe-form-name">
+            <label class="visually-hidden" for="user-email">Ваш e-mail</label>
+            <input class="subscribe-email" type="email" id="user-email" placeholder="Ваш e-mail">
+          </p>
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
-      <section class="footer-social">
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </li>
-          <li class="social-item">
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
-          </li>
-        </ul>
-      </section>
-
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Как с нами связаться</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="copyright" href="https://htmlacademy.ru/">
+        <img class="htmlacademy-logo" src="#" alt="Логотип HTML Academy">
+      </a>
     </footer>
-
-    <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>-->
-
   </body>
-
 </html>
